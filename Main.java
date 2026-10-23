@@ -34,7 +34,7 @@ public class Main {
                     con.prepareStatement(insertSQL);
 
             insertStmt.setInt(1, 6);
-            insertStmt.setString(2, "Dhruv");
+            insertStmt.setString(2, "Yashil");
 
             int insertResult = insertStmt.executeUpdate();
 
@@ -48,7 +48,7 @@ public class Main {
             PreparedStatement updateStmt =
                     con.prepareStatement(updateSQL);
 
-            updateStmt.setString(1, "Dhruv Jotaniya");
+            updateStmt.setString(1, "Yashil Pandya");
             updateStmt.setInt(2, 6);
 
             int updateResult = updateStmt.executeUpdate();
