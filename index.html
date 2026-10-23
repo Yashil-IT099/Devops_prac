@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2>Devops Practical</h2>
+
+    <hr>
+
+    <h2>Registration Form</h2>
+
+    <form onsubmit="clickme(); return false;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="phone">Phone number:</label>
+        <input type="text" id="phone" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <h1 id="success"></h1>
+
+    <script>
+        function clickme() {
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+
+            let success = document.getElementById("success");
+
+            if (name.trim() !== "" && phone.trim() !== "") {
+                success.innerText = "Successful Login";
+            } else {
+                success.innerText = "Please enter all details";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
